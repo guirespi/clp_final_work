@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr 20 23:48:50 2025
+# Process ID: 16724
+# Current directory: C:/Users/user/CESE/clp/final_tp/synthesis/crc8_system_VIO/crc8_system_VIO.runs/impl_1
+# Command line: vivado.exe -log crc8_system_VIO.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source crc8_system_VIO.tcl -notrace
+# Log file: C:/Users/user/CESE/clp/final_tp/synthesis/crc8_system_VIO/crc8_system_VIO.runs/impl_1/crc8_system_VIO.vdi
+# Journal file: C:/Users/user/CESE/clp/final_tp/synthesis/crc8_system_VIO/crc8_system_VIO.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source crc8_system_VIO.tcl -notrace

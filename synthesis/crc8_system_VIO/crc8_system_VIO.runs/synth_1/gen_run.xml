@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1745210831">
+  <File Type="PA-TCL" Name="crc8_system_VIO.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="crc8_system_VIO_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="crc8_system_VIO_reports.tcl"/>
+  <File Type="RDS-RDS" Name="crc8_system_VIO.vds"/>
+  <File Type="RDS-UTIL" Name="crc8_system_VIO_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="crc8_system_VIO_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="crc8_system_VIO.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="crc8_system_VIO_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="crc8_system_VIO_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/crc8_smbus/crc8_smbus.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/crc8_smbus/crc8_smbus.vhd"/>
+        <Attr Name="ImportTime" Val="1745197052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/crc8_system/crc8_system.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/crc8_system/crc8_system.vhd"/>
+        <Attr Name="ImportTime" Val="1745198960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/transmitter/transmitter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/transmitter/transmitter.vhd"/>
+        <Attr Name="ImportTime" Val="1745198877"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/crc8_system_VIO/crc8_system_VIO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/crc8_system_VIO/crc8_system_VIO.vhd"/>
+        <Attr Name="ImportTime" Val="1745207515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="crc8_system_VIO"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/crc8_system_VIO/Arty-Z7-10-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/crc8_system_VIO/Arty-Z7-10-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1745207986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+</GenRun>
