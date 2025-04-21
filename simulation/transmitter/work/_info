@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\user\CESE\clp\final_tp\simulation
+Etransmitter
+Z0 w1744864689
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\user\CESE\clp\final_tp\simulation\transmitter
+Z5 8C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter.vhd
+Z6 FC:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter.vhd
+l0
+L5
+V_1BIGBATjh?U``a3IkSXm3
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1744864752.171000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter.vhd|
+Z10 !s107 C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 o_3V9kB3XZi_jhgXlVcKF3
+!i10b 1
+Atransmitter_arch
+R1
+R2
+R3
+DEx4 work 11 transmitter 0 22 _1BIGBATjh?U``a3IkSXm3
+l24
+L19
+VcWa4`^nnRZ4?OMiZmS^Yk2
+!s100 _8LF>]H^io16ll7ElgDkc3
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Etransmitter_tb
+Z13 w1744864748
+R1
+R2
+R3
+R4
+Z14 8C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter_tb.vhd
+Z15 FC:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter_tb.vhd
+l0
+L5
+VQQ:CUWN[bZ[_<1dj_DUYc0
+!s100 2OVYIDRHDRdLZ92QgjQY91
+R7
+32
+!i10b 1
+Z16 !s108 1744864752.281000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter_tb.vhd|
+Z18 !s107 C:/Users/user/CESE/clp/final_tp/src/transmitter/transmitter_tb.vhd|
+R11
+R12
+Atransmitter_tb_arch
+R1
+R2
+R3
+DEx4 work 14 transmitter_tb 0 22 QQ:CUWN[bZ[_<1dj_DUYc0
+l31
+L8
+V^Im@C5hdBFkT36LIOVK122
+!s100 SdUoN1Z_`9?F3a1UdK>fB1
+R7
+32
+!i10b 1
+R16
+R17
+R18
+R11
+R12
