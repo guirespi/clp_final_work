@@ -8,7 +8,6 @@ entity crc8_smbus is
         rst_i       : in  std_logic;
         data_i      : in  std_logic_vector(7 downto 0);
         wr_i        : in  std_logic;
-        clear_crc_i : in  std_logic;
         crc_o       : out std_logic_vector(7 downto 0)
     );
 end entity;
@@ -20,7 +19,7 @@ architecture crc8_smbus_arch of crc8_smbus is
     signal crc_next    : std_logic_vector(7 downto 0);
 begin
 
-    -- 1. DetecciÃ³n de flanco de subida
+    -- 1. Detección de flanco de subida
     process(clk_i)
     begin
         if rising_edge(clk_i) then
@@ -30,11 +29,11 @@ begin
 
     wr_edge <= wr_i and not wr_i_prev;
 
-    -- 2. Proceso secuencial: actualizaciÃ³n del CRC
+    -- 2. Proceso secuencial: actualización del CRC
     process(clk_i)
     begin
         if rising_edge(clk_i) then
-            if rst_i = '1' or clear_crc_i = '1' then
+            if rst_i = '1' then
                 crc_reg <= (others => '0');
             elsif wr_edge = '1' then
                 crc_reg <= crc_next;
@@ -42,7 +41,7 @@ begin
         end if;
     end process;
 
-    -- 3. Proceso combinacional: cÃ¡lculo del CRC bit a bit
+    -- 3. Proceso combinacional: cálculo del CRC bit a bit
     process(crc_reg, data_i)
         variable crc_tmp : std_logic_vector(7 downto 0);
         variable din     : std_logic_vector(7 downto 0);

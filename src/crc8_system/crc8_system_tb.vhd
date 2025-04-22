@@ -12,7 +12,6 @@ architecture crc8_system_tb_arch of crc8_system_tb is
             rst_i        : in  std_logic;
             data_i       : in  std_logic_vector(7 downto 0);
             wr_i         : in  std_logic;
-            clear_crc_i  : in  std_logic;
             crc_o        : out std_logic_vector(7 downto 0)
         );
     end component;
@@ -22,7 +21,6 @@ architecture crc8_system_tb_arch of crc8_system_tb is
     signal rst_tb       : std_logic := '0';
     signal data_tb      : std_logic_vector(7 downto 0) := (others => '0');
     signal wr_tb        : std_logic := '0';
-    signal clear_crc_tb : std_logic := '0';
     signal crc_tb       : std_logic_vector(7 downto 0);
 
     constant clk_period : time := 10 ns;
@@ -35,7 +33,6 @@ begin
             rst_i       => rst_tb,
             data_i      => data_tb,
             wr_i        => wr_tb,
-            clear_crc_i => clear_crc_tb,
             crc_o       => crc_tb
         );
 
@@ -75,9 +72,9 @@ begin
         write_byte(x"DD");
 
         -- Clear crc
-        clear_crc_tb <= '1';
+        rst_tb <= '1';
         wait for clk_period;
-        clear_crc_tb <= '0';
+        rst_tb <= '0';
         wait for clk_period;
 
         -- End simulation

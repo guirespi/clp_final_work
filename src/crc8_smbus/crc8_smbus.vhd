@@ -8,7 +8,6 @@ entity crc8_smbus is
         rst_i       : in  std_logic;
         data_i      : in  std_logic_vector(7 downto 0);
         wr_i        : in  std_logic;
-        clear_crc_i : in  std_logic;
         crc_o       : out std_logic_vector(7 downto 0)
     );
 end entity;
@@ -34,7 +33,7 @@ begin
     process(clk_i)
     begin
         if rising_edge(clk_i) then
-            if rst_i = '1' or clear_crc_i = '1' then
+            if rst_i = '1' then
                 crc_reg <= (others => '0');
             elsif wr_edge = '1' then
                 crc_reg <= crc_next;

@@ -17,16 +17,16 @@ architecture transmitter_arch of transmitter is
     type state_t is (IDLE, WRITE, DONE);
     signal state_reg, state_next : state_t;
 
-    -- SeÃ±ales internas registradas
+    -- Señales internas registradas
     signal wr_o_reg     : std_logic := '0';
     signal data_o_reg   : std_logic_vector(7 downto 0) := (others => '0');
 
-    -- SeÃ±al para detectar flanco ascendente
+    -- Señal para detectar flanco ascendente
     signal wr_i_prev : std_logic := '0';
     signal wr_edge   : std_logic;
 begin
 
-    -- AsignaciÃ³n a las salidas
+    -- Asignación a las salidas
     wr_o   <= wr_o_reg;
     data_o <= data_o_reg;
 

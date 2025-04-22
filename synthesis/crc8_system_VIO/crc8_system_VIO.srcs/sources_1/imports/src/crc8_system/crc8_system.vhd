@@ -8,16 +8,15 @@ entity crc8_system is
         rst_i        : in  std_logic;
         data_i       : in  std_logic_vector(7 downto 0);
         wr_i         : in  std_logic;
-        clear_crc_i  : in  std_logic;
         crc_o        : out std_logic_vector(7 downto 0)
     );
 end entity;
 
 architecture crc8_system_arch of crc8_system is
 
-    -- SeÃ±ales internas
+    -- Señales internas
     signal wr_signal  : std_logic;
-    signal data_bus       : std_logic_vector(7 downto 0);
+    signal data_bus   : std_logic_vector(7 downto 0);
 
     -- Componente: Transmitter
     component transmitter
@@ -38,7 +37,6 @@ architecture crc8_system_arch of crc8_system is
             rst_i        : in  std_logic;
             data_i       : in  std_logic_vector(7 downto 0);
             wr_i         : in  std_logic;
-            clear_crc_i  : in  std_logic;
             crc_o        : out std_logic_vector(7 downto 0)
         );
     end component;
@@ -63,7 +61,6 @@ begin
             rst_i        => rst_i,
             data_i       => data_bus,
             wr_i         => wr_signal,
-            clear_crc_i  => clear_crc_i,
             crc_o        => crc_o
         );
 

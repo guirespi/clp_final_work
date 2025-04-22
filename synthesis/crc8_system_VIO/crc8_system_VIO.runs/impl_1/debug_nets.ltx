@@ -7,9 +7,9 @@
         <Option Id="ACTIVITY_VALUE" value=""/>
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="a2a61b6769865774a47d8719f4d6579f"/>
+        <Option Id="CORE_UUID" value="F369C4A0740056B099107BD8742DF801"/>
         <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_VIO" value="crc8_system_vio_inst"/>
+        <Option Id="HW_VIO" value="crc8_VIO"/>
         <Option Id="INPUT_VALUE" value=""/>
         <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
         <Option Id="PROBE_PORT" value="0"/>
@@ -31,9 +31,9 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="a2a61b6769865774a47d8719f4d6579f"/>
+        <Option Id="CORE_UUID" value="F369C4A0740056B099107BD8742DF801"/>
         <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_VIO" value="crc8_system_vio_inst"/>
+        <Option Id="HW_VIO" value="crc8_VIO"/>
         <Option Id="OUTPUT_VALUE" value=""/>
         <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="PROBE_PORT" value="0"/>
@@ -48,9 +48,9 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="a2a61b6769865774a47d8719f4d6579f"/>
+        <Option Id="CORE_UUID" value="F369C4A0740056B099107BD8742DF801"/>
         <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_VIO" value="crc8_system_vio_inst"/>
+        <Option Id="HW_VIO" value="crc8_VIO"/>
         <Option Id="OUTPUT_VALUE" value=""/>
         <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
         <Option Id="PROBE_PORT" value="1"/>
@@ -72,9 +72,9 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="a2a61b6769865774a47d8719f4d6579f"/>
+        <Option Id="CORE_UUID" value="F369C4A0740056B099107BD8742DF801"/>
         <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_VIO" value="crc8_system_vio_inst"/>
+        <Option Id="HW_VIO" value="crc8_VIO"/>
         <Option Id="OUTPUT_VALUE" value=""/>
         <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="PROBE_PORT" value="2"/>
@@ -83,23 +83,6 @@
       </probeOptions>
       <nets>
         <net name="probe_wr"/>
-      </nets>
-    </probe>
-    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="a2a61b6769865774a47d8719f4d6579f"/>
-        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_VIO" value="crc8_system_vio_inst"/>
-        <Option Id="OUTPUT_VALUE" value=""/>
-        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
-        <Option Id="PROBE_PORT" value="3"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="probe_clear_crc"/>
       </nets>
     </probe>
   </probeset>

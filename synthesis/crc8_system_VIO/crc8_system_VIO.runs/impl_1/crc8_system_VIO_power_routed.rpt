@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Sun Apr 20 23:50:53 2025
+| Date             : Mon Apr 21 21:49:39 2025
 | Host             : DESKTOP-1K2CI8F running 64-bit major release  (build 9200)
 | Command          : report_power -file crc8_system_VIO_power_routed.rpt -pb crc8_system_VIO_power_summary_routed.pb -rpx crc8_system_VIO_power_routed.rpx
 | Design           : crc8_system_VIO
@@ -36,8 +36,8 @@ Table of Contents
 | Dynamic (W)              | 0.001        |
 | Device Static (W)        | 0.090        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 83.9         |
+| Junction Temperature (C) | 26.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |     1909 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      602 |     17600 |            3.42 |
-|   Register               |    <0.001 |     1071 |     35200 |            3.04 |
+| Slice Logic              |    <0.001 |     1900 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      595 |     17600 |            3.38 |
+|   Register               |    <0.001 |     1068 |     35200 |            3.03 |
 |   CARRY4                 |    <0.001 |       12 |      4400 |            0.27 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       98 |       --- |             --- |
-| Signals                  |    <0.001 |     1385 |       --- |             --- |
+|   Others                 |     0.000 |       97 |       --- |             --- |
+| Signals                  |    <0.001 |     1379 |       --- |             --- |
 | I/O                      |    <0.001 |        1 |       100 |            1.00 |
 | Static Power             |     0.090 |          |           |                 |
 | Total                    |     0.091 |          |           |                 |
@@ -150,20 +150,19 @@ Table of Contents
 | Name                                                                               | Power (W) |
 +------------------------------------------------------------------------------------+-----------+
 | crc8_system_VIO                                                                    |     0.001 |
-|   crc8_system_inst                                                                 |    <0.001 |
-|     crc_inst                                                                       |    <0.001 |
-|     tx_inst                                                                        |    <0.001 |
-|   crc8_system_vio_inst                                                             |    <0.001 |
+|   crc8_VIO                                                                         |    <0.001 |
 |     inst                                                                           |    <0.001 |
 |       DECODER_INST                                                                 |    <0.001 |
 |       PROBE_IN_INST                                                                |    <0.001 |
 |       PROBE_OUT_ALL_INST                                                           |    <0.001 |
 |         G_PROBE_OUT[0].PROBE_OUT0_INST                                             |    <0.001 |
-|         G_PROBE_OUT[1].PROBE_OUT0_INST                                             |     0.000 |
+|         G_PROBE_OUT[1].PROBE_OUT0_INST                                             |    <0.001 |
 |         G_PROBE_OUT[2].PROBE_OUT0_INST                                             |    <0.001 |
-|         G_PROBE_OUT[3].PROBE_OUT0_INST                                             |    <0.001 |
-|       PROBE_OUT_WIDTH_INST                                                         |     0.000 |
+|       PROBE_OUT_WIDTH_INST                                                         |    <0.001 |
 |       U_XSDB_SLAVE                                                                 |    <0.001 |
+|   crc8_system_inst                                                                 |    <0.001 |
+|     crc_inst                                                                       |    <0.001 |
+|     tx_inst                                                                        |    <0.001 |
 |   dbg_hub                                                                          |     0.001 |
 |     inst                                                                           |     0.001 |
 |       BSCANID.u_xsdbm_id                                                           |     0.001 |
